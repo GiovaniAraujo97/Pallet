@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Capriola&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Seção Principal */
+.main { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: auto; /* Ajuste para permitir que a altura se ajuste ao conteúdo */
+}
+
+/* Contêiner Principal */
+
+
+/* Carrossel */
+.carousel-image {
+  margin-top: 1rem; /* Menor espaçamento no topo */
+  width: 100%;
+  max-width: 800px;
+  height: auto; /* Ajuste para permitir que a altura se ajuste ao conteúdo */
+  max-height: 80vh; /* Limite a altura máxima para manter proporção */
+  border-radius: 8px;
+}
+
+/* Botões do Carrossel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Contêiner Acima do Carrossel */
+.container {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  padding: 2rem; /* Ajuste para controlar a altura automaticamente */
+  box-sizing: border-box;
+}
+
+.container-left {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  flex-direction: column;
+  width: 35vw;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.container-left h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  margin-left: 1.6rem;
+}
+
+.container-left p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  padding-bottom: 2rem;
+  margin-top: -30px;
+}
+
+.container-left button {
+  margin-right: 18rem;
+  font-size: 18px;
+  margin-top: -16px;
+  background-color: #a5714c7e; 
+  border: none;
+  height: 2.8rem;
+  width: 10rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-left button:hover {
+  color: black;
+  background-color: #c08255c9;
+}

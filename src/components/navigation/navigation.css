@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.navigation nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+  
+ul .imagem-logo {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 55px;
+  width: 58px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-right: 5rem;
+  margin-top: -10px;
+  background-color: rgb(22, 107, 107);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+ul .imagem-logo:hover {
+    transform: translateX(1rem);
+}
+
+.navigation nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 6rem;
+    padding-top: 14px;
+    height: 2vh;
+}
+
+.nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: "Capriola", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar li:hover {
+    color: #a5714c;
+}
+
+
+.nav-bar li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Espessura da linha */
+    width: 0; /* Começa com 0, invisível */
+    background-color: #ffffff; /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave */
+  }
+  
+  .nav-bar li:hover::after {
+    width: 100%; /* A linha se expande para o tamanho total do item */
+  }
+
+.navigation .icons {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-left: 4rem;
+}
+
+.navigation .icon-insta {
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation .icon-insta:hover {
+    color: rgba(207, 107, 199, 0.781);
+}
+
+.navigation .icon-whats {
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation .icon-whats:hover {
+    color: rgb(105, 214, 54);
+}
